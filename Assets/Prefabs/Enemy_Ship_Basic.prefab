@@ -176,8 +176,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2deac053f587dbf489c9225ac01e0e68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  maxHealth: 30
   DeathEffect: {fileID: 2940829747311928285, guid: 8329250363256af4b8eda3f05d4971b3, type: 3}
+  shipDestroyPoints: 50
+  applyCameraShake: 0
 --- !u!114 &-6636447015597356596
 MonoBehaviour:
   m_ObjectHideFlags: 0

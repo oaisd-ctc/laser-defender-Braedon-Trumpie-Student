@@ -197,6 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   DeathEffect: {fileID: 0}
+  applyCameraShake: 1
 --- !u!114 &4467884807671285393
 MonoBehaviour:
   m_ObjectHideFlags: 0

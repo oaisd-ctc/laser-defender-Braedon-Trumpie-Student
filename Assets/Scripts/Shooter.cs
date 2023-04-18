@@ -11,15 +11,21 @@ public class Shooter : MonoBehaviour
     [SerializeField] float firingRate = 0.2f;
 
     [Header("AI")]
-    [SerializeField] bool useAI;
+    public bool useAI;
     [SerializeField] float BotFireRateVariance;
 
     bool isFiring;
     Coroutine firingCoroutine;
+    AudioPlayer audioPlayer;
     
     public void SetIsFiring(bool b)
     {
         isFiring = b;
+    }
+
+    void Awake() 
+    {
+        audioPlayer = FindObjectOfType<AudioPlayer>();
     }
     void Start()
     {
@@ -65,12 +71,13 @@ public class Shooter : MonoBehaviour
                     transform.up * projectileSpeed;
             }
             Destroy(instance, projectileLifetime);
+            audioPlayer.PlayShootingClip();
             yield return new WaitForSeconds(!useAI ?
                 1f/firingRate : 1f/Mathf.Clamp(
                     Random.Range(
                         firingRate - BotFireRateVariance,
                         firingRate + BotFireRateVariance),
-                    0, float.MaxValue));  
+                    0, float.MaxValue));
         }
     }
 }

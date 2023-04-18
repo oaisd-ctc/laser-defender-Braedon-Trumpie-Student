@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
@@ -23,15 +24,14 @@ public class Player : MonoBehaviour
     {
         shooter = GetComponent<Shooter>();
     }
-void Start() 
-{
-    InitBounds();
-}
+    void Start() 
+    {
+        InitBounds();
+    }
     void Update()
     {
         Move();
     }
-
     void InitBounds()
     {
         Camera mainCamera = Camera.main;

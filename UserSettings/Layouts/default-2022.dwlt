@@ -120,8 +120,8 @@ MonoBehaviour:
     y: 0
     width: 397
     height: 931
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -146,8 +146,8 @@ MonoBehaviour:
     y: 0
     width: 806
     height: 635
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 43
+  controlID: 19
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -445,23 +445,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\brtr76d\Laser Defender
+  m_LastProjectPath: C:\Users\brtr76d\Documents\GitHub\laser-defender-Braedon-Trumpie-Student
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5e660000
-    m_LastClickedID: 26206
-    m_ExpandedIDs: 000000002a6600002c6600002e66000000ca9a3b
+    m_SelectedIDs: 62660000
+    m_LastClickedID: 26210
+    m_ExpandedIDs: 000000002c6600002e660000646600003267000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -627,9 +627,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1c650000
-      m_LastClickedID: 25884
-      m_ExpandedIDs: 14fbffff
+      m_SelectedIDs: a0070000
+      m_LastClickedID: 0
+      m_ExpandedIDs: a6e7ffff14fbffff1c650000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -645,7 +645,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 3}
+        m_ClientGUIView: {fileID: 6}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -795,9 +795,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: -244, y: 10}
+      snapOffset: {x: -244, y: -604}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
+      snapCorner: 3
       id: Scene View/Camera
       index: 3
       layout: 4
@@ -1021,9 +1021,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.121757485, y: 0.36916685, z: -0.048086014}
+    m_Target: {x: 0.30563325, y: -0.76634693, z: -0.120535836}
     speed: 2
-    m_Value: {x: -0.121757485, y: 0.36916685, z: -0.048086014}
+    m_Value: {x: 0.30563325, y: -0.76634693, z: -0.120535836}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1073,9 +1073,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.170838
+    m_Target: 13.41583
     speed: 2
-    m_Value: 6.170838
+    m_Value: 13.41583
   m_Ortho:
     m_Target: 1
     speed: 2
