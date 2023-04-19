@@ -7,11 +7,26 @@ public class ScoreKeeper : MonoBehaviour
 {
     TextMeshProUGUI scoreText;
     private int score;
+    static ScoreKeeper instance;
 
+    void ManageSingleton()
+    {
+        if(instance != null)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
     void Awake() 
     {
         scoreText = FindObjectOfType<TextMeshProUGUI>();
         scoreText.text = score.ToString();
+        ManageSingleton();
     }
     public int GetScore()
     {

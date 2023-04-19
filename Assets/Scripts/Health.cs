@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
     CameraShake cameraShake;
     AudioPlayer audioPlayer;
     ScoreKeeper scoreKeeper;
+    LevelManager levelManager;
 
     void Awake() 
     {
@@ -20,6 +21,7 @@ public class Health : MonoBehaviour
         audioPlayer = FindObjectOfType<AudioPlayer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         health = maxHealth;
+        levelManager = FindObjectOfType<LevelManager>();
     }
 
     void OnTriggerEnter2D(Collider2D other) 
@@ -58,6 +60,10 @@ public class Health : MonoBehaviour
             {
                 scoreKeeper.AddScore(shipDestroyPoints);
                 Debug.Log(scoreKeeper.GetScore());
+            }
+            else
+            {
+                levelManager.LoadGameOver();
             }
             Destroy(gameObject);
         }
